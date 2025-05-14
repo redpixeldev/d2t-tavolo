@@ -1,0 +1,194 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+---
+
+<Layout title='Astro'>
+	<Header />
+	<div>
+		<div class="container pt-5 pb-8 md:pb-11">
+			<div class="flex flex-col sm:flex-row sm:gap-7 lg:gap-12 xl:gap-16 items-center lg:items-start">
+				<img src="/about-image.jpeg" class="w-full sm:w-1/2 max-h-56 sm:max-h-70 lg:max-h-80 object-cover object-[50%_70%]" alt="">
+				<div class="sm:w-1/2 xl:pr-24 py-4 md:py-5">
+					<span class="text-sm md:text-lg text-black">Welkom bij</span>
+					<h1 class="uppercase text-2xl md:text-3xl font-bold text-brand-green">TAVOLO</h1>
+					<div class="prose text-black prose-p:text-xs/[14px] prose-p:font-light pt-3 md:pt-5">
+						<p>Heb je zin in een heerlijke, verse maaltijd zonder uren in de keuken te staan? Bij Tavolo brengen we de smaak van kwaliteit en zorg tot bij jou thuis. Onze met liefde bereide afhaalgerechten combineren verse ingrediënten met verfijnde smaken, zodat jij kunt genieten van een culinaire ervaring zonder moeite.
+						</p>
+						<p>Of je nu kiest voor een snelle lunch, een gezellig diner met vrienden of een comfortabele maaltijd na een drukke dag – bij Tavolo zit je altijd goed. Bestel eenvoudig online en schuif aan tafel zonder moeite.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="relative">
+				<img src="serving-image.jpg" class="sm:absolute w-full sm:w-1/2 right-0 inset-y-0 object-cover h-64 sm:h-full" alt="">
+				<div class="container sm:h-80 xl:h-96 items-center flex">
+					<div class="sm:w-1/2 sm:pr-8 lg:pr-16 xl:pr-32 py-5 md:py-8 flex items-center">
+						<div>
+							<span class="text-sm md:text-lg text-black">Over onze </span>
+							<h1 class="uppercase text-2xl md:text-3xl font-bold text-brand-green">AFHAALGERECHTEN</h1>
+							<div class="prose text-black prose-p:text-xs/[14px] prose-p:font-light pt-3 md:pt-5">
+								<p>Bij Tavolo draait alles om smaak en kwaliteit. Onze gerechten worden met oog voor detail en liefde voor het vak samengesteld, met enkel de beste verse ingrediënten. Van klassieke favorieten tot verrassende culinaire creaties – elk gerecht straalt verfijning uit en brengt de perfecte balans tussen eenvoud en smaak.</p>
+								<p>Of je nu kiest voor een lichte salade, een rijk gevulde pasta of een seizoensgebonden specialiteit, je proeft de zorg en passie in elke hap. Laat je verrassen door onze gevarieerde menukaart en geniet van een maaltijd die niet alleen voedt, maar ook inspireert.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative">
+				<img src="food-presentation-image.jpg" class="sm:absolute w-full sm:w-1/2 left-0 inset-y-0 object-cover h-64 sm:h-full" alt="">
+				<div class="container sm:h-80 xl:h-96 flex items-center">
+					<div class="sm:w-1/2 sm:pl-8 lg:pl-14 xl:pl-20 sm:pr-3 lg:pr-8 xl:pr-16 py-5 md:py-8 flex items-center ml-auto">
+						<div>
+							<span class="text-sm md:text-lg text-black">De gerechten</span>
+							<h1 class="uppercase text-2xl md:text-3xl font-bold text-brand-green">AFHALEN</h1>
+							<div class="prose text-black prose-p:text-xs/[14px] prose-p:font-light pt-3 md:pt-5">
+								<p>Bij Tavolo geloven we dat lekker eten niet ingewikkeld hoeft te zijn. Onze gerechten worden niet alleen met zorg bereid, maar ook verpakt in stijlvolle, praktische borden die je gemakkelijk kunt meenemen. Of je nu onderweg bent, thuis wilt genieten of iets meeneemt naar vrienden – jouw maaltijd blijft vers en perfect gepresenteerd.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="relative pb-12 md:pb-16 lg:pb-20 pt-8 md:pt-11">
+			<img src="/bg-menu.png" class="absolute -left-2 -bottom-16 sm:-bottom-40 w-auto h-[25rem] sm:h-[40rem] md:h-[51rem] opacity-10 rotate-[65deg]" alt="">
+			<div class="container relative z-30 pr-0">
+				<div class="text-center">
+					<h2 class="uppercase text-brand-green text-2xl md:text-3xl font-bold">AFHAALGERECHTEN</h2>
+				</div>
+				<div class="pt-6 md:pt-8">
+					<div class="overflow-auto relative">
+						<ul class="flex sm:justify-center gap-8 sm:gap-12 items-center whitespace-nowrap">
+							<li class="text-black font-bold text-xs md:text-sm uppercase">Apero</li>
+							<li class="text-black font-light text-xs md:text-sm uppercase">VOORGERECHTEN</li>
+							<li class="text-black font-light text-xs md:text-sm uppercase">SHARING DISHES</li>
+							<li class="text-black font-light text-xs md:text-sm uppercase">HOOFDGERECHTEN</li>
+						</ul>
+					</div>
+					<div class="flex flex-col sm:flex-row gap-4 sm:gap-16 lg:gap-24 pt-11 md:pt-16 pr-4">
+						<div class="sm:w-1/2 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10">
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+						</div>
+						<div class="sm:w-1/2 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10">
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+							<div class="flex gap-1 items-center">
+								<span class="text-xs md:text-sm font-light">SASHAMI VAN TONIJN</span>
+								<div class="border-t border-dotted border-brand-green flex-1 w-full h-px"></div>
+								<span class="text-xs md:text-sm font-bold text-brand-green">€ 5,00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="relative h-48 md:h-56 lg:h-65">
+			<img src="/bg-cta.jpg" class="h-full object-cover w-full absolute inset-0 object-[50%_65%]" alt="">
+			<div class="w-full absolute inset-0 bg-brand-green/65 z-20 h-full"></div>
+			<div class="container text-center py-16 relative z-30 flex items-center justify-center h-full">
+				<h2 class="text-white uppercase font-bold text-2xl md:text-3xl">VERS EN HUISBEREID, MET OOG VOOR KWALITEIT.</h2>
+			</div>
+		</div>
+
+		<div class="relative">
+			<div class="container py-14 sm:py-16 pr-0">
+				<div class="flex items-center pr-0 mr-0 ">
+					<h2 class="text-2xl md:text-3xl text-brand-green font-bold uppercase -rotate-90">FOTOGALERIJ</h2>
+					<div class="overflow-auto relative">
+						<div class="whitespace-nowrap flex flex-col">
+							<div class="flex gap-4 h-[20rem] lg:h-[26rem] shrink-0">
+								<img src="/gallery-image.jpg" class="w-[30rem] lg:w-[40rem] xl:w-[50rem] h-full object-cover shrink-0" alt="">
+								<img src="/gallery-image.jpg" class="w-[30rem] lg:w-[40rem] xl:w-[50rem] h-full object-cover shrink-0 opacity-40" alt="">
+								<img src="/gallery-image.jpg" class="w-[30rem] lg:w-[40rem] xl:w-[50rem] h-full object-cover shrink-0 opacity-40" alt="">
+							</div>
+							<div class="w-full h-2 bg-[#f7dec0] mt-4 relative">
+								<div class="absolute w-24 h-full left-0 inset-y-0 bg-brand-orange"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container pb-12 sm:pb-14">
+			<div class="flex flex-col sm:flex-row gap-8 lg:gap-5 xl:gap-24 xl:px-16">
+				<div class="sm:w-1/3 lg:w-[30%] xl:w-1/4">
+					<span class="text-sm md:text-lg text-black">Zonder moeite genieten?</span>
+					<h2 class="uppercase text-2xl md:text-3xl font-bold text-brand-green">NEEM CONTACT</h2>
+					<div class="pt-6 space-y-2">
+						<span class="text-black text-sm block">Ieperstraat 110 <br/>
+							8830 Hooglede
+						</span>
+						<div>
+							<a href="tel:+32470593539" class="font-bold text-brand-green block text-sm">Tel +32 470 59 35 39</a>
+							<a href="mailto:hello@tavolo.be" class="font-bold text-brand-green text-sm">hello@tavolo.be</a>
+						</div>
+						<span class="text-black text-sm">BTW BE 0724.913.068</span>
+					</div>
+				</div>
+				<form class="sm:w-2/3 lg:w-[70%] xl:w-3/4">
+					<div class="flex flex-col lg:flex-row gap-4 pb-5">
+						<input type="text" name="name" id="name" placeholder="NAAM*" class="text-black text-xs p-2 border border-brand-green lg:w-1/2">
+						<input type="text" name="address" id="address" placeholder="ADRESS*" class="text-black text-xs p-2 border border-brand-green lg:w-1/2">
+					</div>
+					<div class="flex flex-col lg:flex-row gap-4 pb-5">
+						<input type="text" name="phone" id="phone" placeholder="TELEFOONNUER*" class="text-black text-xs p-2 border border-brand-green lg:w-1/2">
+						<input type="email" name="email" id="email" placeholder="EMAIL*" class="text-black text-xs p-2 border border-brand-green lg:w-1/2">
+					</div>
+					<textarea name="message" id="message" placeholder="VRAAG OF EXTRA INFORMATIE" class="w-full text-black text-xs p-2 border border-brand-green h-28"></textarea>
+					<div class="flex justify-end pt-3">
+						<button class="text-white uppercase text-sm py-1 px-4 bg-brand-green">VERZENDEN</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<Footer />
+</Layout>
