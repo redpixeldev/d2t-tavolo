@@ -1,0 +1,5 @@
+name = "d2t-tavolo"
+pages_build_output_dir = "./dist"
+
+[vars]
+PROD = true
